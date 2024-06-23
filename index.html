@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Example</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="index.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <h1 id="gradientText" class="gradient-text">Aperte no botão</h1>
+        </div>
+        <br />
+        <div class="row justify-content-center align-items-center">
+            <div class="col-auto">
+                <select class="form-control mb-3" id="colorSelect">
+                    <option value="#AEC6CF">Azul</option>
+                    <option value="#FF6961">Vermelho</option>
+                    <option value="#FDFD96">Amarelo</option>
+                    <option value="#77DD77">Verde</option>
+                    <option value="#FFB7C5">Rosa</option>
+                </select>
+            </div>
+            <div class="col-auto">
+                <button id="drawButton" class="btn btn-primary mb-3" onclick="drawHeart()">Desenhar</button>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="rectangle col-10">
+                <div>
+                    <canvas id="drawingCanvas"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Custom JS -->
+    <script src="index.js"></script>
+</body>
+</html>
